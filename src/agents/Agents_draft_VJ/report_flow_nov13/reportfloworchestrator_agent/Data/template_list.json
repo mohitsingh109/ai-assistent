@@ -1,0 +1,82 @@
+[
+    {
+        "id": "388a6a7b-1405-4fe2-b352-eb0fc6bde269",
+        "name": "Demographics: Basic",
+        "description": "Demographics",
+        "category": "demographics",
+        "config": {
+            "required_fields": ["report_name", "schedule_time"],
+            "optional_fields": []
+        }
+    },
+    {
+        "id": "f4d65171-986f-4ed5-b1a5-a0e1a4adf7db",
+        "name": "Demographics: By Region",
+        "description": "Demographics By Region",
+        "category": "demographics",
+        "config": {
+            "required_fields": ["report_name", "schedule_time", "region"],
+            "optional_fields": []
+        }
+    },
+    {
+        "id": "321f163b-e14e-46df-b0b4-593211f13c72",
+        "name": "Asset: Overview",
+        "description": "Asset Overview",
+        "category": "asset",
+        "config": {
+            "required_fields": ["report_name", "schedule_time", "asset_types"],
+            "optional_fields": []
+        }
+    },
+    {
+        "id": "a9d3c5f2-901b-4ef8-a476-8e92f2b4e7a1",
+        "name": "Incomplete Checklist: Company Unit Breakdown",
+        "description": "Participants with Incomplete Checklists grouped by Company Unit ID.",
+        "category": "compliance",
+        "config": {
+            "required_fields": ["report_name", "schedule_time", "company_unit_id", "incomplete_checklist_count"],
+            "optional_fields": ["participant_country"]
+        }
+    },
+    {
+        "id": "d0e1b2c3-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
+        "name": "UK Participants: Grant Summary",
+        "description": "Summary of grants and granted quantity for participants in the UK.",
+        "category": "grants",
+        "config": {
+            "required_fields": ["report_name", "schedule_time", "participant_country", "granted_quantity"],
+            "optional_fields": ["grant_id", "grant_date"]
+        }
+    },
+    {
+        "id": "1e2f3g4h-5i6j-7k8l-9m0n-1o2p3q4r5s6t",
+        "name": "Vesting: Next Tranche Forecast",
+        "description": "Forecast of the next vesting event details and quantities.",
+        "category": "vesting_schedule",
+        "config": {
+            "required_fields": ["report_name", "schedule_time", "vesting_date", "next_vesting_tranche_size"],
+            "optional_fields": ["participant_id", "grant_id"]
+        }
+    },
+    {
+        "id": "9876z5y4-3x2w-1v0u-9t8s-7r6q5p4o3n2m",
+        "name": "Plan: Launch Date Analysis",
+        "description": "Report on plans and their respective launch dates.",
+        "category": "plans",
+        "config": {
+            "required_fields": ["report_name", "schedule_time", "plan_name", "plan_launch_date"],
+            "optional_fields": []
+        }
+    },
+    {
+        "id": "321f163b-e14e-46df-b0b4-593211f13c72",
+        "name": "Participate with incomplete checklist",
+        "description": "Participate with incomplete checklist",
+        "category": "incomplete_checklist",
+        "config": {
+            "required_fields": ["report_name", "schedule_time", "company_id", "region"],
+            "optional_fields": []
+        }
+    }
+]
